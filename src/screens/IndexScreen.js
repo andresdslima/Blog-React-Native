@@ -9,7 +9,7 @@ import { useContext, useEffect } from "react";
 import { Context as BlogContext } from "../context/BlogContext";
 import { Feather } from "@expo/vector-icons";
 
-export default function IndexScreen({ navigation }) {
+export function IndexScreen({ navigation }) {
   const { state, deleteBlogPost, getBlogPosts } = useContext(BlogContext);
 
   useEffect(() => {

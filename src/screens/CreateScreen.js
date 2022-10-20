@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
 import { useContext } from "react";
 import { Context } from "../context/BlogContext";
-import BlogPostForm from "../components/BlogPostForm";
+import { BlogPostForm } from "../components/BlogPostForm";
 
-export default function CreateScreen({ navigation }) {
+export function CreateScreen({ navigation }) {
   const { addBlogPost } = useContext(Context);
   const navigate = () => navigation.navigate("Index");
 
@@ -16,5 +16,3 @@ export default function CreateScreen({ navigation }) {
     />
   );
 }
-
-const styles = StyleSheet.create({});
